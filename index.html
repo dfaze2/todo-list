@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
+        <h1>To-Do List</h1>
+        <form class="add-task" id="task-form" autocomplete="off">
+            <input type="text" id="task-title" placeholder="Task title..." required>
+            <input type="text" id="task-desc" placeholder="Description (optional)">
+            <input type="datetime-local" id="task-due" required>
+            <button id="add-btn" type="submit">+</button>
+        </form>
+        <h2 class="tasks-title">To-Do</h2>
+        <ul id="tasks-list"></ul>
+        <h2 class="tasks-title done-title">Completed</h2>
+        <ul id="done-list"></ul>
+    </div>
+    <footer>Simple & Productive</footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
